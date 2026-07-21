@@ -1,0 +1,27 @@
+package dailytest;
+import java.util.Scanner;
+public class avg 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter the no. of digits ");
+		int  size = sc.nextInt();
+		double sum=0;
+		double arr[] = new double[size];
+		for(int i=0;i<size;i++)
+		{
+			System.out.println("enter value "+ (i+1));
+			arr[i]=sc.nextDouble();
+		}
+		for(int j=0;j<size;j++)
+		{
+			sum+=arr[j];
+		}
+		double avg = sum/size;
+		System.out.println("the average is "+ avg);
+		
+		sc.close();
+	}
+
+}
