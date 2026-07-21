@@ -1,0 +1,37 @@
+package dailytest;
+import java.util.Scanner;
+public class maxin2 {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter A :");
+		int a = sc.nextInt();
+		System.out.print("Enter B :");
+		int b = sc.nextInt();
+		
+		//mehod one using if else 
+		{
+			if(a==b)
+			{
+				System.out.println("Both are equal");
+			}
+			if(a>b)
+			{
+				System.out.println("A is greater");
+			}
+			else
+			{
+				System.out.println("B is greater");
+			}
+		}
+		
+		
+		
+		// method 2 using java builtin 
+		System.out.println("the greatest number among a and b is "+" "+Math.max(a, b));
+		
+
+	}
+
+}
