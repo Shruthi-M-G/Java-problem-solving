@@ -1,0 +1,40 @@
+package dailytest;
+import java.util.Scanner;
+public class swap 
+{
+	
+	//method 1 using temp 
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter two values to swap ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println("value before swap "+ a +" "+ b);
+		int temp = a;
+		a=b;
+		b=temp;
+		
+		
+		System.out.println("value after swap "+ a +" "+temp);
+	}
+	
+	//method 2 using arithmetic 
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter two values to swap ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println("value before swap "+ a +" "+ b);
+		a = a+b;
+		b = a-b;
+		a = Math.abs(b-a);
+		
+		
+		
+		System.out.println("value after swap "+ a +" "+b);
+	}
+	
+
+}
