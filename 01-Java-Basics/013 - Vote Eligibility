@@ -1,0 +1,29 @@
+package day_2;
+
+import java.util.Scanner;
+
+public class eligiblitytovote 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the age : ");
+		int n = sc.nextInt();
+		if(n<0)
+		{
+			System.out.print("Invalid input");
+		}
+		else if(n>=18)
+		{
+			System.out.print("Yes eligible to vote");
+		}
+		else
+		{
+			System.out.print("No not eligible to vote");
+		}
+		sc.close();
+	}
+
+	
+
+}
